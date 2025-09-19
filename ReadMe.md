@@ -20,8 +20,8 @@ En esta sección deben eliminar esta línea de texto, borrar la leyenda "Integra
 
     +Integrante 1
         -No. de Cuenta: 
-    +Integrante 2
-        -No. de Cuenta: 
+    +Mendoza Aragón Edith Alejandra
+        -No. de Cuenta: 323238702
     +Integrante 3
         -No. de Cuenta: 
 
