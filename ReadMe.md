@@ -22,8 +22,8 @@ En esta sección deben eliminar esta línea de texto, borrar la leyenda "Integra
         -No. de Cuenta: 321491163
     +Mendoza Aragón Edith Alejandra
         -No. de Cuenta: 323238702
-    +Martinez ----- Diego
-        -No. de Cuenta: *********
+    +Martinez Ortiz Diego
+        -No. de Cuenta: 323019675
 
 ## Comentarios
 
