@@ -107,12 +107,14 @@ relacionIntegrada3 = [(x,y) | x <- [1..30], y <- [1..30], sonCongruentes x y 5, 
 -- Cero es natural, Suc Cero es natural, Suc Suc Cero es natural, etc.
 data Natural = Cero | Suc Natural deriving (Show,Eq) --Esto es para que se muestre y que se puedan comparar
 
+-- Ejercicio 1: La función debe recibir un número natural y determinar si es par o no.
 esPar :: Natural -> Bool
 esPar Cero = True
 esPar (Suc n) = False
 esPar (Suc (Suc n)) = esPar n
 
 
+-- Ejericio 2: La función debe recibir dos números naturales y determinar si estos números son iguales o no.
 iguales :: Natural -> Natural -> Bool
 iguales Cero Cero = True
 iguales _ Cero = False
@@ -120,20 +122,26 @@ iguales Cero _ = False
 iguales (Suc n) (Suc m) = iguales n m
 
 
+-- Ejercicio 3: La función debe recibir dos números naturales y devolver el que sea mayor.
 maximo :: Natural -> Natural -> Natural 
 maximo n Cero = n
 maximo Cero n = n
 maximo (Suc n) (Suc m) = Suc (maximo n m)
 
 
+-- Ejercicio 4: La función debe recibir dos números naturales n, m y devolver el resultado de n^m.
 potencia :: Natural -> Natural -> Natural
 potencia n Cero = Suc Cero
 potencia n (Suc m) = multiplicacion n (potencia n m)
 
+-- Funcion auxiliar para la funcion potencia (Ejercicio 4)
+-- Multiplica dos naturales y regresa el resultado de la multiplicacion como otro natural
 multiplicacion :: Natural -> Natural -> Natural
 multiplicacion n Cero = Cero
 multiplicacion n (Suc m) = suma n (multiplicacion n m)
 
+-- Funcion auxiliar para la funcion multiplicacion (Otra funcion auxiliar para el Ejercicio 4)
+-- Suma dos naturales y regresa el resultado de la suma como otro natural
 suma :: Natural -> Natural -> Natural
 suma n Cero = n
 suma n (Suc m) = Suc (suma n m)
