@@ -18,13 +18,13 @@ El primero es para compilar y el segundo es para ejecutar las pruebas unitarias.
 
 En esta sección deben eliminar esta línea de texto, borrar la leyenda "Integrante n" y escribir su nombre empezando por apellidos y su número de cuenta.
 
-    +Integrante 1
-        -No. de Cuenta: 
+    +Gonzalez Huerta Francisco
+        -No. de Cuenta: 321491163
     +Mendoza Aragón Edith Alejandra
         -No. de Cuenta: 323238702
-    +Integrante 3
-        -No. de Cuenta: 
+    +Martinez ----- Diego
+        -No. de Cuenta: *********
 
 ## Comentarios
 
-Recuerden que opcionalmente pueden agregar un comentario (ver los lineamientos de entrega). Si es el caso, borren esta linea y dejen su comentario.
+No logré hacer que cabal build funcionara, pero el archivo en src compila y funciona como deberia, los archivos fuera de src son partes de la practica, pero pueden ser ignorados ya que los pase al archivo dentro de src.
